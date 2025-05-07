@@ -4,28 +4,29 @@ const age: number = 20;
 
 // normal function
 if (age >= 18) {
-  console.log("adult");
+  console.log("a");
 } else {
-  console.log("picci");
+  console.log("p");
 }
 
 // ternary operator
-const isAdult = age >= 18 ? "adult 1" : "not adult 1";
+const isAdult = age >= 18 ? "a 1" : "not a 1";
 console.log(isAdult);
 
 // nullish coalescing operator
 // null / undefined --> decition making
 
 const isAthentic = undefined;
-const result1 = isAthentic ?? "Guest";
-const result2 = isAthentic ? isAthentic : "Guest";
+const result1 = isAthentic ?? "G";
+const result2 = isAthentic ? isAthentic : "G";
 console.log({ result1 }, { result2 });
 
-const isAthentic2 = "Mithun";
-const result3 = isAthentic2 ?? "Guest";
-const result4 = isAthentic2 ? isAthentic2 : "Guest";
+const isAthentic2 = "M";
+const result3 = isAthentic2 ?? "M";
+const result4 = isAthentic2 ? isAthentic2 : "G";
 console.log({ result3 }, { result4 });
 
+// nullish coalescing operator
 type UserX = {
   name: string;
   email?: string;
@@ -34,12 +35,12 @@ type UserX = {
 };
 
 const userX: UserX = {
-  name: "Mithun Biswas",
+  name: "M",
   gender: "male",
   bloodGroup: "B+",
 };
 
-const email = userX?.email ?? "No Email";
+const email = userX?.email ?? "No Em";
 const emailUndefined = userX?.email;
 console.log({ email });
 console.log({ emailUndefined });
