@@ -1,4 +1,4 @@
-// 3_5.ts
+// 3_10.ts
 
 {
   // access modifiers
@@ -18,8 +18,12 @@
       this._balance = this._balance + amount;
     }
 
-    public getBalance() {
+    private getBalance() {
       return this._balance;
+    }
+
+    getHiddenMethod() {
+      return this.getBalance();
     }
   }
 
